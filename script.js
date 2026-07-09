@@ -47,10 +47,10 @@ function updateActiveNav() {
 /* ── Typing effect ── */
 function initTyping() {
   const roles = [
-    'B2B Content Strategist',
-    'LinkedIn Growth Researcher',
-    'Demand Gen Enthusiast',
-    'B2B SaaS Researcher',
+    'Digital Marketing Leader',
+    'SEO Specialist',
+    'Social Media Strategist',
+    'Paid Media Expert',
     'Content Systems Builder'
   ];
   const el = document.getElementById('typingText');

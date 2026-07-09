@@ -347,6 +347,32 @@ section { padding: 110px 0; }
 .skill-bar { height: 5px; background: var(--bg-3); border-radius: 5px; overflow: hidden; }
 .skill-fill { height: 100%; background: var(--grad); border-radius: 5px; width: 0%; transition: width 1.5s cubic-bezier(.4,0,.2,1); }
 
+/* ── Experience ── */
+#experience { background: var(--bg-2); }
+.timeline { position: relative; max-width: 800px; margin: 0 auto; }
+.timeline::before { content: ''; position: absolute; left: 16px; top: 0; bottom: 0; width: 2px; background: var(--border-2); }
+.timeline-item { position: relative; padding-left: 48px; margin-bottom: 40px; }
+.timeline-item:last-child { margin-bottom: 0; }
+.timeline-dot { position: absolute; left: 8px; top: 4px; width: 18px; height: 18px; border-radius: 50%; background: var(--grad); border: 4px solid var(--bg-2); box-shadow: 0 0 0 2px var(--blue-l); }
+.timeline-date { font-size: 0.85rem; color: var(--blue-l); font-weight: 600; margin-bottom: 4px; font-family: var(--mono); }
+.timeline-content { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 24px; transition: var(--tr); }
+.timeline-content:hover { border-color: rgba(59,130,246,0.3); transform: translateY(-4px); background: var(--surface-2); }
+.timeline-content h3 { font-size: 1.2rem; font-weight: 800; margin-bottom: 4px; }
+.timeline-company { font-size: 0.95rem; color: var(--text-2); font-weight: 500; margin-bottom: 16px; }
+.timeline-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.timeline-list li { position: relative; padding-left: 20px; font-size: 0.9rem; color: var(--text-2); line-height: 1.6; }
+.timeline-list li::before { content: '▹'; position: absolute; left: 0; color: var(--blue); }
+
+/* ── Education ── */
+#education { background: var(--bg); }
+.edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 900px; margin: 0 auto; }
+.edu-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 28px; transition: var(--tr); display: flex; align-items: flex-start; gap: 16px; }
+.edu-card:hover { border-color: rgba(59,130,246,0.3); transform: translateY(-4px); background: var(--surface-2); }
+.edu-icon { width: 48px; height: 48px; border-radius: 12px; background: rgba(59,130,246,0.1); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0; color: var(--blue-l); }
+.edu-info h3 { font-size: 1.1rem; font-weight: 800; margin-bottom: 6px; }
+.edu-info p { color: var(--text-2); font-size: 0.9rem; margin-bottom: 8px; }
+.edu-date { font-family: var(--mono); font-size: 0.8rem; color: var(--text-3); }
+
 /* ── Projects ── */
 #projects { background: var(--bg-2); }
 .project-featured {
